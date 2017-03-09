@@ -37,7 +37,7 @@ You're reading it!
 
 ####1. Explain how (and identify where in your code) you extracted HOG features from the training images.
 
-The code for this step is contained in the second-fourth code cell of the IPython notebook called `Udacity - Self driving course.ipynb`, specifically in the second step. In this the second code cell we define the parameters to use in the feature extraction. Once we have defined the parameters, we call to the function ####extract_features() that is implemented and fully described in the IPython notebook called `VDTlibrary.ipynb` (also you can use `VDTlibrary.py`, that is the library here used).
+The code for this step is contained in the second-fourth code cell of the IPython notebook called `Udacity - Self driving course.ipynb`, specifically in the second step. In this the second code cell we define the parameters to use in the feature extraction. Once we have defined the parameters, we call to the function `extract_features()` that is implemented and fully described in the IPython notebook called `VDTlibrary.ipynb` (also you can use `VDTlibrary.py`, that is the library here used).
 
 I started by reading in all the [vehicle](https://s3.amazonaws.com/udacity-sdc/Vehicle_Tracking/vehicles.zip) and [non-vehicle](https://s3.amazonaws.com/udacity-sdc/Vehicle_Tracking/non-vehicles.zip) images. Here is an example of one of each of the vehicle and non-vehicle classes:
 
@@ -89,7 +89,7 @@ Here's a [link to my video result](output.mp4)
 
 ####2. Describe how (and identify where in your code) you implemented some kind of filter for false positives and some method for combining overlapping bounding boxes.
 
-This explication is totally specified in the Processing images cell of Udacity - Self driving course.ipynb file. Basically, I get a probability map from the spatial current state and a temporal probability map, in which I have into acount the previous frames for decide if the car has to be still there or no (`VDTlibrary.ipynb` - function `search_windows` - step 8). Moreover, to make more robust the system I have developed the next steps:
+This explication is totally specified in the Processing images cell of `Udacity - Self driving course.ipynb` file. Basically, I get a probability map from the spatial current state and a temporal probability map, in which I have into acount the previous frames for decide if the car has to be still there or no (`VDTlibrary.ipynb` - function `search_windows` - step 8). Moreover, to make more robust the system I have developed the next steps:
 * Get the prediction from the SVM classifier.
 * Pass the prediction thought a softmax function to normalize the data between 0 and 1.
 * If the probability obtained before is over a threshold (0.85) then
