@@ -37,7 +37,7 @@ You're reading it!
 
 ####1. Explain how (and identify where in your code) you extracted HOG features from the training images.
 
-The code for this step is contained in the second-fourth code cell of the IPython notebook called `Udacity - Self driving course.ipynb`, specifically in the second step. In this the second code cell we define the parameters to use in the feature extraction. Once we have defined the parameters, we call to the function #####extract_features() that is implemented and fully described in the IPython notebook called `VDTlibrary.ipynb` (also you can use `VDTlibrary.py`, that is the library here used).
+The code for this step is contained in the second-fourth code cell of the IPython notebook called `Udacity - Self driving course.ipynb`, specifically in the second step. In this the second code cell we define the parameters to use in the feature extraction. Once we have defined the parameters, we call to the function ####extract_features() that is implemented and fully described in the IPython notebook called `VDTlibrary.ipynb` (also you can use `VDTlibrary.py`, that is the library here used).
 
 I started by reading in all the [vehicle](https://s3.amazonaws.com/udacity-sdc/Vehicle_Tracking/vehicles.zip) and [non-vehicle](https://s3.amazonaws.com/udacity-sdc/Vehicle_Tracking/non-vehicles.zip) images. Here is an example of one of each of the vehicle and non-vehicle classes:
 
