@@ -89,7 +89,7 @@ Here's a [link to my video result](output.mp4)
 
 ####2. Describe how (and identify where in your code) you implemented some kind of filter for false positives and some method for combining overlapping bounding boxes.
 
-This explication is totally specified in the Processing images cell of Udacity - Self driving course.ipynb file. Basically, I get a probability map from the spatial current state and a temporal probability map, in which I have into acount the previous frames for decide if the car has to be still there or no (VDTlibrary.ipynb - function search_windows - step 8). Moreover, to make more robust the system I have developed the next steps:
+This explication is totally specified in the Processing images cell of Udacity - Self driving course.ipynb file. Basically, I get a probability map from the spatial current state and a temporal probability map, in which I have into acount the previous frames for decide if the car has to be still there or no (`VDTlibrary.ipynb` - function `search_windows` - step 8). Moreover, to make more robust the system I have developed the next steps:
 * Get the prediction from the SVM classifier.
 * Pass the prediction thought a softmax function to normalize the data between 0 and 1.
 * If the probability obtained before is over a threshold (0.85) then
