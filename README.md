@@ -19,9 +19,8 @@ All commented code can be found at:
 [image1]: ./img-pruebas/car_notcar.png
 [image2]: ./img-pruebas/HOG_example.png
 [image3]: ./img-pruebas/sliding_windows.png
-[image4]: ./img-pruebas/sliding_window.png
-[image5]: ./img-pruebas/bboxes_and_heat.png
-[image6]: ./img-pruebas/labels_map.png
+[image4]: ./img-pruebas/detected-cars.png
+[image5]: ./img-pruebas/good.png
 [video1]: ./output.mp4
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/513/view) Points
